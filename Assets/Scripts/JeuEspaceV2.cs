@@ -15,6 +15,8 @@ public class JeuEspaceV2 : MonoBehaviour
     
     public GameObject fxExplosion;
 
+    public GameObject _sonPortail;
+
     // Variable pour garder une référence à la copie global
     public static JeuEspaceV2 instance;
 
@@ -36,6 +38,8 @@ public class JeuEspaceV2 : MonoBehaviour
             // On va détruire cette nouvelle copie extra
             Destroy(gameObject);
         }
+
+        
     }
 
     public void Start()
@@ -76,5 +80,8 @@ public class JeuEspaceV2 : MonoBehaviour
         // Retourner la valeur initiale des étoiles avant ce niveau
         etoiles = etoilesDebutNiveau;
         textEtoiles.text = etoiles.ToString("0");
+        
     }
+
+
 }

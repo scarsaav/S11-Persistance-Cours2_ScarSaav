@@ -10,7 +10,7 @@ public class JeuEspaceV1 : MonoBehaviour
 
     void Start()
     {
-        // DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); //preserver le gameobject actuel
     }
 
     public void ChangerScene(int indexScene)
@@ -21,7 +21,7 @@ public class JeuEspaceV1 : MonoBehaviour
     public void CollecterEtoile(GameObject etoile)
     {
         Destroy(etoile);
-        etoiles++;
+        etoiles++; //ajouter un point dans la collecte d'étoile
     }
    
 }
