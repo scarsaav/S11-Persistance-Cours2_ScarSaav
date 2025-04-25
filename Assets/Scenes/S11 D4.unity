@@ -1791,7 +1791,7 @@ GameObject:
   - component: {fileID: 1160963771}
   - component: {fileID: 1160963772}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: sfxPortail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1823,7 +1823,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f6a6900cbeae86d498aaa86cc1e3c0cf, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3077,6 +3077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CentraleJeu
       objectReference: {fileID: 0}
+    - target: {fileID: 8141634403073367256, guid: 9de0dd8d83e09e349a430663b68c21d4,
+        type: 3}
+      propertyPath: sonPortail
+      value: 
+      objectReference: {fileID: 1160963772}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

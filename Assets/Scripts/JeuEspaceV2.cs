@@ -15,7 +15,7 @@ public class JeuEspaceV2 : MonoBehaviour
     
     public GameObject fxExplosion;
 
-    public GameObject _sonPortail;
+    public AudioSource sonPortail;
 
     // Variable pour garder une référence à la copie global
     public static JeuEspaceV2 instance;
@@ -51,6 +51,9 @@ public class JeuEspaceV2 : MonoBehaviour
 
     public void ChangerScene(int indexScene)
     {
+        //Jouer son portail
+        sonPortail.Play();
+
         SceneManager.LoadScene(indexScene);
         // Après que la nouvelle scène est chargé,
         // on garde la valeur de étoiles au début
